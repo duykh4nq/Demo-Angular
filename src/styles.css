@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~font-awesome/css/font-awesome.css';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-class {
+    height: 50px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.add-class input {
+    height: 30px;
+    width: 76%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.add-class input:hover {
+    border: 1px solid #47b3aa;
+}
+
+.add-class button {
+    width: 20%;
+    height: 34px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #47b3aa;
+    background-color: #47b3aa;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-class button:hover {
+    border: 1px solid #67dfd4;
+    background-color: #67dfd4;
+}
+
+.list-class {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.list-class h2 {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #47b3aa;
+}
+
+.list-class .class-item {
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+}
+
+.list-class .class-item .item-left {
+    text-decoration: none;
+    width: 90%;
+    color: black;
+    padding-left: 10px;
+    outline: none;
+}
+
+.list-class .class-item .item-left:hover {
+    cursor: pointer;
+    color: crimson;
+}
+
+.list-class .class-item .delete {
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: crimson;
+    cursor: pointer;
+    outline: none;
+}
+
+.list-class .class-item .delete:hover {
+    color: rgb(160, 7, 7);
+    border-radius: 5px 0 0px 5px;
+}
+
+.list-class .class-item .edit {
+    cursor: pointer;
+    outline: none;
+}
+
+.list-class .class-item .edit:hover {
+    color: #47b3aa;
+}
+
+.footer-class {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.footer-class button {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #fff;
+    height: 30px;
+    border: 1px solid crimson;
+    background-color: crimson;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.footer-class button:hover {
+    background-color: rgb(180, 13, 47);
+    border: 1px solid rgb(180, 13, 47);
+}

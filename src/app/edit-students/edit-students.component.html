@@ -1,0 +1,21 @@
+<div class="item-class" *ngIf="newStudent">
+  <p>Edit {{ title }}</p>
+  <div class="body-class">
+    <h4>
+      Name class: <span>{{ newStudent[index].name | uppercase }}</span>
+    </h4>
+    <div><span>Id: </span>{{ newStudent[index].id }}</div>
+    <div>
+      <label for="newClass-name">New Name: </label>
+      <input
+        id="newClass-name"
+        [(ngModel)]="newStudent[index].name"
+        placeholder="name"
+      />
+    </div>
+  </div>
+  <div class="footer-class" style="border-top: 1px solid grey">
+    <button (click)="goBack()">Go back</button>
+    <button (click)="save(newStudent[index].name)">Save</button>
+  </div>
+</div>
